@@ -16,7 +16,10 @@ st.divider()
 # -------------------------------
 # Load Model
 # -------------------------------
-model = joblib.load("models/churn_model.pkl")
+import os
+
+model_path = os.path.join("models", "churn_model.pkl")
+model = joblib.load(model_path)
 
 # -------------------------------
 # USER INPUT SECTION
